@@ -27,7 +27,7 @@ public class AlmacenDispositivo {
 	public boolean altaDispositivo(Dispositivo d) {
 
 		if (indicePorCodigo.containsKey(d.getCodigo())) {
-			// Si entra aquí, es que ya existe, por lo tanto no lo añadimos.
+			// If it enters here, it means it already exists, therefore we do not add it.
 			return false;
 		}
 
@@ -42,7 +42,7 @@ public class AlmacenDispositivo {
 			return true;
 
 		} else {
-			System.out.println("Se ha superado el numero de dispositivos");
+			System.out.println("The maximum number of devices has been exceeded");
 			return false;
 
 		}
@@ -62,13 +62,13 @@ public class AlmacenDispositivo {
 	public void listarDispositivos() {
 
 		if (indicePorCodigo.isEmpty()) {
-			System.out.println("No hay dispositivos registrados.");
+			System.out.println("No devices registered.");
 			return;
 		}
 
 		for (Dispositivo i : inventario) {
 
-			// Evitar espacios en blanco
+			// Avoid blank spaces (null elements)
 
 			if (i != null) {
 				System.out.println(i);
@@ -79,7 +79,7 @@ public class AlmacenDispositivo {
 	public double mediaGlobalConsumo() {
 
 		if (inventario == null) {
-			System.out.println("No hay dispositivos registrados");
+			System.out.println("No devices registered");
 
 			return 0.0;
 		} else {
@@ -99,7 +99,7 @@ public class AlmacenDispositivo {
 	public Dispositivo dispositivoMasUsado() {
 
 		if (contador == 0) {
-			System.out.println("No hay dispositivos registrados");
+			System.out.println("No devices registered");
 
 			return null;
 		} else {
@@ -109,7 +109,7 @@ public class AlmacenDispositivo {
 
 			for (Dispositivo d : inventario) {
 
-				// Compruebo que el dispositivo no sea null para que no siga recorriendo hasta
+				// I check that the device is not null so it doesn't keep iterating up to
 				// 30
 				if (d != null) {
 
