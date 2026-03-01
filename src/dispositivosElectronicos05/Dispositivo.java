@@ -29,7 +29,7 @@ public class Dispositivo {
 
 		if (sesiones.isEmpty()) {
 
-			System.out.println("No hay sesiones");
+			System.out.println("No sessions");
 			return 0.0;
 		} else {
 			double suma = 0;
@@ -46,7 +46,7 @@ public class Dispositivo {
 
 		if (sesiones.isEmpty()) {
 
-			System.out.println("No hay sesiones");
+			System.out.println("No sessions");
 			return 0.0;
 		} else {
 			double suma = 0;
@@ -63,7 +63,7 @@ public class Dispositivo {
 
 		if (sesiones.isEmpty()) {
 
-			System.out.println("No hay sesiones");
+			System.out.println("No sessions");
 			return 0.0;
 		} else {
 			double suma = 0;
@@ -80,7 +80,7 @@ public class Dispositivo {
 
 		if (sesiones.isEmpty()) {
 
-			System.out.println("No hay sesiones");
+			System.out.println("No sessions");
 			return null;
 		} else {
 			SesionUso sesionGanadora = null;
@@ -103,7 +103,7 @@ public class Dispositivo {
 
 	@Override
 	public String toString() {
-		return "Dispositivo [codigo=" + codigo + ", nombre=" + nombre + ", tipo=" + tipo + ", mediaConsumo()="
+		return "Device [code=" + codigo + ", name=" + nombre + ", type=" + tipo + ", mediaConsumo()="
 				+ mediaConsumo() + ", mediaTemperatura()=" + mediaTemperatura() + ", totalHorasUso()=" + totalHorasUso()
 				+ "]";
 	}
@@ -112,12 +112,12 @@ public class Dispositivo {
 
 		if (sesiones.isEmpty()) {
 
-			System.out.println("No hay sesiones");
+			System.out.println("No sessions");
 
 		} else {
 			for (SesionUso i : sesiones) {
 
-				System.out.println("Sesion:" + i);
+				System.out.println("Session:" + i);
 			}
 		}
 	}
