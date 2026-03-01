@@ -26,7 +26,7 @@ public class SesionUso {
 
 	@Override
 	public String toString() {
-		return "SesionUso [horas=" + horas + ", consumo=" + consumo + ", temperaturaMax=" + temperaturaMax + "]";
+		return "SesionUso [hours=" + horas + ", consumption=" + consumo + ", maxTemperature=" + temperaturaMax + "]";
 	}
 
 }
